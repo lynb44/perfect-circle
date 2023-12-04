@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+    h1{color: #324580;}
+    #thing1{width: 300px;
+    height: 300px;
+background-color: coral;
+border: 5px solid black;
+border-radius: 200px;
+animation-name: moveRED;
+animation-duration: 6s;
+animation-play-state: paused;
+animation-iteration-count: infinite;}
+#thing1:hover{animation-play-state: running;}
+
+    #thing2{width: 300px;
+    height: 300px;
+background-color: coral;
+border: 5px solid black;
+border-radius: 200px;
+animation-name: moveYELLOW;
+animation-duration: 6s;
+animation-play-state: paused;
+animation-iteration-count: infinite;}
+#thing2:hover{animation-play-state: running;}
+
+#thing3{width: 300px;
+    height: 300px;
+background-color: coral;
+border: 5px solid black;
+border-radius: 200px;
+animation-name: moveGREEN;
+animation-duration: 6s;
+animation-play-state: paused;
+animation-iteration-count: infinite;}
+#thing3:hover{animation-play-state: running;}
+
+@keyframes moveRED {
+  0%   {background-color:rgb(164, 231, 109); margin-left:0px; width: 100px;}
+  25%  {background-color:rgb(187, 239, 67); margin: left 600px; width: 200px;}
+  42%  {background-color: rgb(119, 237, 23);margin: left 900px; width: 280px;}
+  50%  {background-color:rgb(0, 0, 0); margin: left 900px; width: 300px;}
+  58%  {background-color: rgb(119, 237, 23); margin: left 900px; width: 280px;}
+  75%  {background-color:rgb(187, 239, 67); margin: left 400px; width: 200px;}
+  100% {background-color:rgb(164, 231, 109); margin: left 0px; width: 100px;}
+}
+
+@keyframes moveYELLOW {
+  0%   {background-color:rgb(228, 203, 141); margin-left:0px; width: 100px;}
+  25%  {background-color:rgb(231, 196, 106); margin: left 600px; width: 200px;}
+  44%  {background-color: rgb(237, 187, 23);margin: left 900px; width: 280px;}
+  50%  {background-color:rgb(0, 0, 0); margin: left 900px; width: 300px;}
+  56%  {background-color: rgb(237, 187, 23); margin: left 900px; width: 280px;}
+  75%  {background-color:rgb(231, 196, 109); margin: left 400px; width: 200px;}
+  100% {background-color:rgb(228, 203, 141); margin: left 0px; width: 100px;}
+}
+
+@keyframes moveGREEN {
+  0%   {background-color:rgb(231, 109, 109); margin-left:0px; width: 100px;}
+  25%  {background-color:rgb(239, 67, 67); margin: left 600px; width: 200px;}
+  46%  {background-color: rgb(237, 23, 23);margin: left 900px; width: 280px;}
+  50%  {background-color:rgb(0, 0, 0); margin: left 900px; width: 300px;}
+  54%  {background-color: rgb(237, 23, 23); margin: left 900px; width: 280px;}
+  75%  {background-color:rgb(236, 88, 88); margin: left 400px; width: 200px;}
+  100% {background-color:rgb(231, 109, 109); margin: left 0px; width: 100px;}
+}
+
+    </style>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <h1>Can you make a perfect circle?</h1>
+    <p>  land on black, to make an (almost) perfect circle </p>
+    <div id="thing1"></div>
+    <div id="thing2"></div>
+    <div id="thing3"></div>
+    <p>  BONUS CHALLENGE! Make a traffic light 😏 </p>
+</body>
+</html>
